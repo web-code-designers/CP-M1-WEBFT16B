@@ -39,8 +39,24 @@ const {
 
 var isAncestor = function(genealogyTree, ancestor, descendant){
   // Tu código aca:
+//   if (genealogyTree[ancestor].length <=0) {
+//     return false
+// }
+    while(genealogyTree[ancestor].length <=0){
+      return false;
+    }
 
+    for(indice = 0; indice < genealogyTree.length; indice++){
+
+      while(genealogyTree[apoy].length > 0){
+        return isAncestor(genealogyTree, apoy, descendant);
+      }
+
+    }
+      return false
 }
+
+
 
 
 // EJERCICIO 2
